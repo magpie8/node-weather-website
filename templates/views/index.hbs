@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Weather today?
+        </title>
+        <link rel=icon href="https://static.vecteezy.com/system/resources/thumbnails/008/814/798/small/magpie-gradient-logo-template-vector.jpg">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>
+                Use this site to get your weather.
+            </p>
+
+            <form>
+                <input placeholder="Location">
+                <button>
+                    Search
+                </button>
+            </form>
+            <form>
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+                <input>
+                <button>
+                    Feeling Lucky
+                </button>
+            </form>
+        </div>
+        
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+    </body>
+
+</html>
