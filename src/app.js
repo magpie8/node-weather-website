@@ -5,7 +5,7 @@ const forecast = require('/Users/georgeliu/Documents/projects/udemy-nodejs-cours
 const geocode = require('/Users/georgeliu/Documents/projects/udemy-nodejs-course/web-server/src/utils/geocode.js')
 
 const app = express()
-
+const port = process.env.PORT || 3000
 
 
 app.set('view engine', 'hbs')
@@ -104,6 +104,6 @@ app.get('*', (req,res) => {
     })
 })
 
-app.listen(3000,() => {
-    console.log('Server is up on 3000')
+app.listen(port,() => {
+    console.log(`Server is up on ${port}`)
 })
