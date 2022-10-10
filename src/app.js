@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-const forecast = require('/Users/georgeliu/Documents/projects/udemy-nodejs-course/web-server/src/utils/forecast.js')
-const geocode = require('/Users/georgeliu/Documents/projects/udemy-nodejs-course/web-server/src/utils/geocode.js')
+const forecast = require('./utils/forecast.js')
+const geocode = require('./utils/geocode.js')
 
 const app = express()
 const port = process.env.PORT || 3000
